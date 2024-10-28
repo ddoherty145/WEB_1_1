@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <form>
+        <label for="date">What Date Works For You?</label>
+        <input id="date" type="date" name="Date">
+
+        <label>
+            Where do you want to Go?
+            <input type="text" name="location">
+        </label>
+
+        <label>
+            What Type of Ticket fo you Want to Buy?
+            <select name="class_type">
+                <option value="first_class">First Class</option>
+                <option value="buisness_class">Buisness Class</option>
+                <option value="economy">Economy</option>
+                <option value="cargo">Cargo</option>
+            </select>
+        </label>
+        <input type="submit" value="Submit">
+    </form>
+
+    <form action="/login" method="POST">
+        <label for="user_name">User Name:</label>
+        <input type="text" id="user_name" name="user_name" required>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
